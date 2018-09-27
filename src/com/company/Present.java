@@ -28,9 +28,7 @@ public class Present {
         PriceSweets.totalWeightAndCost();
 
         System.out.println("Информация по позициям");
-        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, " + chocolates.getPrice() + " руб. цена за кг");
-        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г, " + jellybean.getPrice() + " руб. цена за кг");
-        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г, " + lollipop.getPrice() + " руб. цена за кг");
+        dataOutput(chocolates, jellybean, lollipop);
 
 
         System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
@@ -54,13 +52,17 @@ public class Present {
             PriceSweets.totalWeightAndCost();
 
             System.out.println("Информация по позициям");
-            System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, " + chocolates.getPrice() + " руб. цена за кг");
-            System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г, " + jellybean.getPrice() + " руб. цена за кг");
-            System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г, " + lollipop.getPrice() + " руб. цена за кг");
+            dataOutput(chocolates, jellybean, lollipop);
 
 
         }
         scanner.close();
+    }
+
+    private static void dataOutput(Chocolates chocolates, Jellybean jellybean, Lollipop lollipop) {
+        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, " + chocolates.getPrice() + " руб. цена за кг");
+        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г, " + jellybean.getPrice() + " руб. цена за кг");
+        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г, " + lollipop.getPrice() + " руб. цена за кг");
     }
 
 }
