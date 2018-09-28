@@ -36,6 +36,7 @@ public class Present {
 //            System.out.print("Шоколадные:");
 //            weight = scanner.nextInt();
 //            chocolates = new Chocolates("Шоколад", 365, weight);
+//            chocolates.setWeight(weight);
 //            chocolates.priceGram();
 
 //            System.out.print("Жевательные:");
@@ -46,6 +47,7 @@ public class Present {
 //            weight = scanner.nextInt();
 //            lollipop.priceGram();
 //
+//           sweet.totalWeightAndCost();
 //
 //            System.out.println("Информация по позициям");
 //            dataOutput(chocolates, jellybean, lollipop);

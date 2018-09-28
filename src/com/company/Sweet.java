@@ -15,10 +15,6 @@ public class Sweet {
         this.price = price;
         this.weight = weight;
     }
-    public Sweet(double weight) {
-        this();
-        this.weight = weight;
-    }
 
     public Sweet() {
         this.price = 0;
@@ -48,7 +44,7 @@ public class Sweet {
     }
 
     public void setWeight(double weight) {
-        this.weight += weight;
+        this.weight = weight;
     }
 
     public double getPriseGram() {
@@ -56,15 +52,15 @@ public class Sweet {
     }
 
     public void setPriseGram(double priseGram) {
-        this.priseGram += priseGram;
+        this.priseGram = priseGram;
     }
 
     public double priceGram() {
-        double cost = weight / 1000 * price;
-        setPriseGram(cost);
-        totalCost += cost;
+        priseGram = weight / 1000 * price;
+        setPriseGram(priseGram);
+        totalCost += priseGram;
         totalWeight += weight;
-        return cost;
+        return priseGram;
     }
 
     public void totalWeightAndCost(){
