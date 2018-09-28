@@ -1,19 +1,14 @@
 package com.company;
 
 public class Chocolates extends Sweet {
-    private final int idChocolates;
+    private final int IDCHOCOLATES;
 
     public Chocolates(String title, double price,double weight) {
         super(title, price,weight);
-        this.idChocolates = 0001;
-    }
-
-    public Chocolates(double weight) {
-        super(weight);
-        this.idChocolates = 0001;
+        this.IDCHOCOLATES = 1;
     }
 
     public int getIdChocolates() {
-        return idChocolates;
+        return IDCHOCOLATES;
     }
 }

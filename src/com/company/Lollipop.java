@@ -2,14 +2,14 @@ package com.company;
 
 
 public class Lollipop extends Sweet{
-    private final int idLollipop;
+    private final int IDLOLLIPOP;
 
     public Lollipop(String title, double price,double weight) {
         super(title, price,weight);
-        this.idLollipop = 0003;
+        this.IDLOLLIPOP = 3;
     }
 
     public int getIdLollipop() {
-        return idLollipop;
+        return IDLOLLIPOP;
     }
 }
