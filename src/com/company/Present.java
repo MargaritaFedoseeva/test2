@@ -28,33 +28,31 @@ public class Present {
         System.out.println("Информация по позициям");
         dataOutput(chocolates, jellybean, lollipop);
 
-
-        System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
-        String delete = scanner.next();
-        if (delete.equals("yes")) {
-
-            System.out.print("Шоколадные:");
-            weight = scanner.nextInt();
-
-            chocolates.priceGram();
-
-
-            System.out.print("Жевательные:");
-            weight = scanner.nextInt();
-
-            jellybean.priceGram();
-
-            System.out.print("Леденцы:");
-            weight = scanner.nextInt();
-
-            lollipop.priceGram();
-
-            sweet.totalWeightAndCost();
-
-            System.out.println("Информация по позициям");
-            dataOutput(chocolates, jellybean, lollipop);
-
-        }
+//
+//        System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
+//        String delete = scanner.next();
+//        if (delete.equals("yes")) {
+//
+//            System.out.print("Шоколадные:");
+//            weight = scanner.nextInt();
+//
+//
+//            System.out.print("Жевательные:");
+//            weight = scanner.nextInt();
+//
+//            jellybean.priceGram();
+//
+//            System.out.print("Леденцы:");
+//            weight = scanner.nextInt();
+//
+//            lollipop.priceGram();
+//
+//            sweet.totalWeightAndCost();
+//
+//            System.out.println("Информация по позициям");
+//            dataOutput(chocolates, jellybean, lollipop);
+//
+//        }
         scanner.close();
 
     }

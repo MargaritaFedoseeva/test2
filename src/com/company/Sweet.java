@@ -9,10 +9,14 @@ public class Sweet {
     public static double totalWeight;
 
 
-    public Sweet(String title,double price,  double weight) {
+    public Sweet(String title, double price, double weight) {
         this();
         this.title = title;
         this.price = price;
+        this.weight = weight;
+    }
+    public Sweet(double weight) {
+        this();
         this.weight = weight;
     }
 
@@ -20,7 +24,7 @@ public class Sweet {
         this.price = 0;
         this.title = "";
         this.weight = 0;
-        this.priseGram=0;
+        this.priseGram = 0;
     }
 
     public double getPrice() {
@@ -36,17 +40,14 @@ public class Sweet {
     }
 
     public void setTitle(String title) {
-
         this.title = title;
     }
 
     public double getWeight() {
-
         return weight;
     }
 
     public void setWeight(double weight) {
-
         this.weight += weight;
     }
 

@@ -8,6 +8,11 @@ public class Chocolates extends Sweet {
         this.idChocolates = 0001;
     }
 
+    public Chocolates(double weight) {
+        super(weight);
+        this.idChocolates = 0001;
+    }
+
     public int getIdChocolates() {
         return idChocolates;
     }
