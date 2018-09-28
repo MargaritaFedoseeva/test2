@@ -4,11 +4,15 @@ public class Sweet {
     private double price;
     private String title;
     private double weight;
+    private double priseGram;
+    public static double totalCost;
+    public static double totalWeight;
 
-    public Sweet(double price, String title, double weight) {
+
+    public Sweet(String title,double price,  double weight) {
         this();
-        this.price = price;
         this.title = title;
+        this.price = price;
         this.weight = weight;
     }
 
@@ -16,6 +20,7 @@ public class Sweet {
         this.price = 0;
         this.title = "";
         this.weight = 0;
+        this.priseGram=0;
     }
 
     public double getPrice() {
@@ -31,29 +36,38 @@ public class Sweet {
     }
 
     public void setTitle(String title) {
+
         this.title = title;
     }
 
     public double getWeight() {
+
         return weight;
     }
 
     public void setWeight(double weight) {
-        this.weight = weight;
+
+        this.weight += weight;
     }
 
-    public static double totalCost;
-    public static double totalWeight;
+    public double getPriseGram() {
+        return priseGram;
+    }
 
-    public static double priceGram(double price, double weight) {
+    public void setPriseGram(double priseGram) {
+        this.priseGram += priseGram;
+    }
+
+    public double priceGram() {
         double cost = weight / 1000 * price;
+        setPriseGram(cost);
         totalCost += cost;
         totalWeight += weight;
         return cost;
     }
 
-    public static void totalWeightAndCost(){
-        System.out.println("Общий вес:" + PriceSweets.totalWeight);
-        System.out.println("Общая цена:" + PriceSweets.totalCost);
+    public void totalWeightAndCost(){
+        System.out.println("Общий вес:" +totalWeight);
+        System.out.println("Общая цена:" + totalCost);
     }
 }

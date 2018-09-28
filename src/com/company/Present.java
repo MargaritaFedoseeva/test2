@@ -4,28 +4,26 @@ import java.util.Scanner;
 
 public class Present {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите вес конфет в граммах.");
-
+        Scanner scanner = new Scanner(System.in);
+        Sweet sweet = new Sweet();
         System.out.print("Шоколадные:");
-        Chocolates chocolates = new Chocolates();
         int weight = scanner.nextInt();
-        chocolates.setWeight(weight);
-        chocolates.setPriseGram(PriceSweets.priceGram(chocolates.getPrice(), weight));
+        Chocolates chocolates = new Chocolates("Шоколад",365,weight);
+        chocolates.priceGram();
+
 
         System.out.print("Жевательные:");
-        Jellybean jellybean = new Jellybean();
         weight = scanner.nextInt();
-        jellybean.setWeight(weight);
-        jellybean.setPriseGram(PriceSweets.priceGram(jellybean.getPrice(), weight));
+        Jellybean jellybean = new Jellybean("Жевательные",225,weight);
+        jellybean.priceGram();
 
         System.out.print("Леденцы:");
-        Lollipop lollipop = new Lollipop();
         weight = scanner.nextInt();
-        lollipop.setWeight(weight);
-        lollipop.setPriseGram(PriceSweets.priceGram(lollipop.getPrice(), weight));
+        Lollipop lollipop = new Lollipop("Леденцы",150,weight);
+        lollipop.priceGram();
 
-        PriceSweets.totalWeightAndCost();
+        sweet.totalWeightAndCost();
 
         System.out.println("Информация по позициям");
         dataOutput(chocolates, jellybean, lollipop);
@@ -34,35 +32,36 @@ public class Present {
         System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
         String delete = scanner.next();
         if (delete.equals("yes")) {
+
             System.out.print("Шоколадные:");
             weight = scanner.nextInt();
-            chocolates.setWeight(weight);
-            chocolates.setPriseGram(PriceSweets.priceGram(chocolates.getPrice(), weight));
+
+            chocolates.priceGram();
+
 
             System.out.print("Жевательные:");
             weight = scanner.nextInt();
-            jellybean.setWeight(weight);
-            jellybean.setPriseGram(PriceSweets.priceGram(jellybean.getPrice(), weight));
+
+            jellybean.priceGram();
 
             System.out.print("Леденцы:");
             weight = scanner.nextInt();
-            lollipop.setWeight(weight);
-            lollipop.setPriseGram(PriceSweets.priceGram(lollipop.getPrice(), weight));
 
-            PriceSweets.totalWeightAndCost();
+            lollipop.priceGram();
+
+            sweet.totalWeightAndCost();
 
             System.out.println("Информация по позициям");
             dataOutput(chocolates, jellybean, lollipop);
 
-
         }
         scanner.close();
+
     }
 
     private static void dataOutput(Chocolates chocolates, Jellybean jellybean, Lollipop lollipop) {
-        System.out.println(chocolates.getName() + ": " + chocolates.getPriseGram() + " руб. - стоимость за " + chocolates.getWeight() + " г, " + chocolates.getPrice() + " руб. цена за кг");
-        System.out.println(jellybean.getName() + ": " + jellybean.getPriseGram() + " руб. - стоимость за " + jellybean.getWeight() + " г, " + jellybean.getPrice() + " руб. цена за кг");
-        System.out.println(lollipop.getName() + ": " + lollipop.getPriseGram() + " руб. - стоимость за " + lollipop.getWeight() + " г, " + lollipop.getPrice() + " руб. цена за кг");
+        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n",chocolates.getTitle(),chocolates.getIdChocolates(),chocolates.getPriseGram(),chocolates.getWeight(),chocolates.getPrice());
+        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n",jellybean.getTitle(),jellybean.getIdJellybean(),jellybean.getPriseGram(),jellybean.getWeight(),jellybean.getPrice());
+        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n",lollipop.getTitle(),lollipop.getIdLollipop(),lollipop.getPriseGram(),lollipop.getWeight(),lollipop.getPrice());
     }
-
 }
