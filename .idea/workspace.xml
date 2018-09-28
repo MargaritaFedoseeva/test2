@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ac1d01fa-d603-44c3-b72f-09a2d7175ac2" name="Default" comment="new changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Chocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Chocolates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Jellybean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Jellybean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Lollipop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Lollipop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_2/com/company/Chocolates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_2/com/company/Jellybean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_2/com/company/Lollipop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project_2/com/company/Present.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Present.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Present.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="901" />
+          <entry key="java" value="908" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="901" />
+          <entry key="JAVA" value="908" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -56,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Present.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+            <state relative-caret-position="404">
+              <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -65,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="-78">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#850#851#0" expanded="true" />
                 <element signature="e#884#885#0" expanded="true" />
@@ -140,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/com/company/PriceSweets.java" />
         <option value="$PROJECT_DIR$/src/com/company/Sweet.java" />
         <option value="$PROJECT_DIR$/src/com/company/Chocolates.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Present.java" />
         <option value="$PROJECT_DIR$/src/com/company/Jellybean.java" />
         <option value="$PROJECT_DIR$/src/com/company/Lollipop.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Present.java" />
       </list>
     </option>
   </component>
@@ -195,7 +196,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538128955375" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538129872098" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -399,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538127805985</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="new changes">
+      <created>1538129367548</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1538129367548</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -409,7 +417,7 @@
     <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -419,7 +427,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21997875" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21997875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -522,21 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Chocolates.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -570,10 +563,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="18" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Present.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        <state relative-caret-position="404">
+          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
         </state>
       </provider>
     </entry>
