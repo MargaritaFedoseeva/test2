@@ -14,17 +14,7 @@ public class Present {
         Sweet[] present = {new Chocolates("Шоколадные", 250, weight), new Jellybean("Жевательные", 360, weight), new Lollipop("Леденцы", 300, weight)};
         for (int i = 0; i < present.length; i++) {
             System.out.print(present[i].getTitle() + ":");
-            do {
-                try {
-                    weight = scanner.nextInt();
-                    bError = true;
-                } catch (Exception e) {
-                    System.out.println("Вы ввели некорректное значение, ошибка: " + e);
-                    System.out.print("Введите значение заново: ");
-                    scanner.next();
-                    bError = false;
-                }
-            } while (!bError);
+            weight = getWeight(scanner, weight);
             present[i].setWeight(weight);
             present[i].priceGram();
         }
@@ -49,6 +39,22 @@ public class Present {
 //
 //        }
         scanner.close();
+    }
+
+    private static int getWeight(Scanner scanner, int weight) {
+        boolean bError;
+        do {
+            try {
+                weight = scanner.nextInt();
+                bError = true;
+            } catch (Exception e) {
+                System.out.println("Вы ввели некорректное значение, ошибка: " + e);
+                System.out.print("Введите значение заново: ");
+                scanner.next();
+                bError = false;
+            }
+        } while (!bError);
+        return weight;
     }
 
 
