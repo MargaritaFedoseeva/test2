@@ -7,7 +7,6 @@ public class Present {
     public static void main(String[] args) {
         System.out.println("Введите вес конфет в граммах.");
         Scanner scanner = new Scanner(System.in);
-        boolean bError = true;
         Sweet sweet = new Sweet();
         int weight = 0;
 
