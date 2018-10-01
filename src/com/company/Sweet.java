@@ -67,4 +67,10 @@ public class Sweet {
         System.out.println("Общий вес:" +totalWeight);
         System.out.println("Общая цена:" + totalCost);
     }
+
+    public void dataOutput(Object obj) {
+        for (int i=0; i<((Sweet[])obj).length;i++) {
+            System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", ((Sweet[])obj)[i].getTitle(), ((Sweet[])obj)[i].getPriseGram(), ((Sweet[])obj)[i].getWeight(), ((Sweet[])obj)[i].getPrice());
+        }
+    }
 }

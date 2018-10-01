@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ac1d01fa-d603-44c3-b72f-09a2d7175ac2" name="Default" comment="new changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Present.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Present.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Sweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Sweet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +20,13 @@
     <session id="-560854409">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,12 +41,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="934" />
+          <entry key="java" value="1262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="934" />
+          <entry key="JAVA" value="1262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -54,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Present.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
-              <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+            <state relative-caret-position="248">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -63,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="250">
+              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -140,9 +143,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +176,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538132498571" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538380494363" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -401,18 +404,32 @@
       <option name="project" value="LOCAL" />
       <updated>1538132338807</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="new changes">
+      <created>1538150852120</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1538150852120</updated>
+    </task>
+    <task id="LOCAL-00016" summary="new changes">
+      <created>1538153183581</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1538153183581</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="8278000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="1004" extended-state="6" />
+    <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17043619" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17199148" />
+      <window_info id="Structure" order="1" weight="0.24973376" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
@@ -421,7 +438,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.51965994" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51965994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +459,7 @@
       <window_info anchor="right" id="Database" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17199148" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -452,13 +469,13 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913387" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40472442" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.51965994" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32913387" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32837406" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.30809128" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -518,13 +535,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Nuts.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/io/PrintStream.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/PriceSweets.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Lollipop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -546,10 +556,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Sweet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Present.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        <state relative-caret-position="248">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>

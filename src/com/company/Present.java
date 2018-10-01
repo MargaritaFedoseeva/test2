@@ -7,58 +7,44 @@ public class Present {
         System.out.println("Введите вес конфет в граммах.");
         Scanner scanner = new Scanner(System.in);
         Sweet sweet = new Sweet();
+        int weight = 0;
+        Sweet[] present = {new Chocolates("Шоколадные", 250, weight), new Jellybean("Жевательные", 360, weight), new Lollipop("Леденцы", 300, weight)};
+        for (int i = 0; i < present.length; i++) {
+            System.out.print(present[i].getTitle() + ":");
+            try {
+                weight = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.print("Возникло иключение" + e);
+            }
 
-        System.out.print("Шоколадные:");
-        int weight = scanner.nextInt();
-        Chocolates chocolates = new Chocolates("Шоколад", 365, weight);
-        chocolates.priceGram();
+            present[i].setWeight(weight);
+            present[i].priceGram();
 
+        }
 
-        System.out.print("Жевательные:");
-        weight = scanner.nextInt();
-        Jellybean jellybean = new Jellybean("Жевательные", 225, weight);
-        jellybean.priceGram();
-
-        System.out.print("Леденцы:");
-        weight = scanner.nextInt();
-        Lollipop lollipop = new Lollipop("Леденцы", 150, weight);
-        lollipop.priceGram();
 
         sweet.totalWeightAndCost();
-
         System.out.println("Информация по позициям");
-        dataOutput(chocolates, jellybean, lollipop);
+        sweet.dataOutput(present);
 
 //        System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
 //        String delete = scanner.next();
 //        if (delete.contains("yes")) {
 //
-//            System.out.print("Шоколадные:");
+//        for (int i=0; i< present.length;i++){
+//            System.out.print(present[i].getTitle()+":");
 //            weight = scanner.nextInt();
-//            chocolates = new Chocolates("Шоколад", 365, weight);
-//            chocolates.setWeight(weight);
-//            chocolates.priceGram();
-
-//            System.out.print("Жевательные:");
-//            weight = scanner.nextInt();
-//            jellybean.priceGram();
-//
-//            System.out.print("Леденцы:");
-//            weight = scanner.nextInt();
-//            lollipop.priceGram();
-//
+//            present[i].setWeight(weight);
+//            present[i].priceGram();
+//        }
 //           sweet.totalWeightAndCost();
 //
 //            System.out.println("Информация по позициям");
-//            dataOutput(chocolates, jellybean, lollipop);
+//            sweet.dataOutput(present);
 //
 //        }
         scanner.close();
-    }
+}
 
-    private static void dataOutput(Chocolates chocolates, Jellybean jellybean, Lollipop lollipop) {
-        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", chocolates.getTitle(), chocolates.getIdChocolates(), chocolates.getPriseGram(), chocolates.getWeight(), chocolates.getPrice());
-        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", jellybean.getTitle(), jellybean.getIdJellybean(), jellybean.getPriseGram(), jellybean.getWeight(), jellybean.getPrice());
-        System.out.printf("%s(%d) : %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", lollipop.getTitle(), lollipop.getIdLollipop(), lollipop.getPriseGram(), lollipop.getWeight(), lollipop.getPrice());
-    }
+
 }
