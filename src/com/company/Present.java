@@ -14,10 +14,13 @@ public class Present {
         for (int i = 0; i < present.length; i++) {
             System.out.print(present[i].getTitle() + ":");
             weight = getWeight(scanner, weight);
+
             present[i].setWeight(weight);
-            present[i].priceGram();
+            sweet.setTotalWeight(weight);
+            sweet.setTotalCost(present[i].priceGram());
         }
-        sweet.totalWeightAndCost();
+        System.out.println("Общий вес:" +sweet.getTotalWeight());
+        System.out.println("Общая цена:" + sweet.getTotalCost());
         System.out.println("Информация по позициям");
         sweet.dataOutput(present);
 
