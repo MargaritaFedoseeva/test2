@@ -1,7 +1,5 @@
 package com.company;
 
-import jdk.nashorn.internal.codegen.ObjectClassGenerator;
-
 import java.util.*;
 
 public class Present {
@@ -42,52 +40,17 @@ public class Present {
             }
 
         }while (!id.contains("stop"));
+
+        System.out.println("Информация по позициям");
         for(Sweet sweet: present) {
             totalWeight +=sweet.getWeight();
             totalCost+=sweet.priceGram();
+            System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice());
         }
         System.out.println("Общий вес:" + totalWeight);
         System.out.println("Общая цена:" + totalCost);
 
-
-
-
-
-
-
-
-
-//        Sweet[] present = {new Chocolates("Шоколадные", 250, weight), new Jellybean("Жевательные", 360, weight), new Lollipop("Леденцы", 300, weight)};
-//        for (int i = 0; i < present.length; i++) {
-//            System.out.print(present[i].getTitle() + ":");
-//            weight = getWeight(scanner, weight);
-//
-//            present[i].setWeight(weight);
-//            sweet.setTotalWeight(weight);
-//            sweet.setTotalCost(present[i].priceGram());
-////        }
-//        System.out.println("Общий вес:" + sweet.getTotalWeight());
-//        System.out.println("Общая цена:" + sweet.getTotalCost());
-//        System.out.println("Информация по позициям");
-//        sweet.dataOutput(present);
-////
-//        System.out.print("Хотите убрать или добавить сладости из подарка? (yes/no)");
-//        String delete = scanner.next();
-//        if (delete.contains("yes")) {
-//
-//            for (int i = 0; i < present.length; i++) {
-//                System.out.print(present[i].getTitle() + ":");
-//                weight = scanner.nextInt();
-//                double okdw =  present[i].getWeight();
-//                present[i].setWeight(okdw-weight);
-//                present[i].priceGram();
-//            }
-//
-//            System.out.println("Информация по позициям");
-//            sweet.dataOutput(present);
-//
-//        }
-            scanner.close();
+        scanner.close();
     }
     private static int getWeight(Scanner scanner, int weight) {
         boolean bError;
