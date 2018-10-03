@@ -5,8 +5,6 @@ public class Sweet {
     private String title;
     private double weight;
     private double priseGram;
-    private double totalCost;
-    private double totalWeight;
 
 
     public Sweet(String title, double price, double weight) {
@@ -59,21 +57,6 @@ public class Sweet {
         priseGram = weight / 1000 * price;
         setPriseGram(priseGram);
         return priseGram;
-    }
-    public double getTotalCost() {
-        return totalCost;
-    }
-
-    public void setTotalCost(double totalCost) {
-        this.totalCost += totalCost;
-    }
-
-    public double getTotalWeight() {
-        return totalWeight;
-    }
-
-    public void setTotalWeight(double totalWeight) {
-        this.totalWeight += totalWeight;
     }
 
     public void dataOutput(Object obj) {
