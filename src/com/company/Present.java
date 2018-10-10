@@ -12,14 +12,6 @@ import java.util.*;
 
 public class Present {
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
-
-        Sweet.class.getClassLoader().
-
-
-
-
-
-
         //Scanner scanner = new Scanner(System.in);
 //        String id;
         double totalWeight = 0;
