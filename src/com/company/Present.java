@@ -4,20 +4,43 @@ import sun.nio.cs.UTF_32;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class Present {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
+
+        Sweet.class.getClassLoader().
+
+
+
+
+
+
         //Scanner scanner = new Scanner(System.in);
 //        String id;
         double totalWeight = 0;
         double totalCost = 0;
 //        int weight = 0;
         String line;
-//        Scanner scanner;
+        Scanner scanner;
         List<Sweet> present = new ArrayList<>();
+//        Sweet ch = new Chocolates("Шоколад", 450, 100);
+//        Field[] fs = ch.getClass().getFields();
+//        for (Field f : fs) {
+//            if (f.getDeclaredAnnotation(ControlledObject.class).def() == 1) {
+//                String name = f.getDeclaredAnnotation(ControlledObject.class).name();
+//                Method[] ms = ch.getClass().getDeclaredMethods();
+//                for (Method m : ms) {
+//                    if (m.getName().equals("set" + name)) {
+//                        m.invoke(ch, "color");
+//                    }
+//                }
+//            }
+//        }
 
         try {
 //            BufferedReader reader = new BufferedReader (new InputStreamReader(new FileInputStream("C:\\project-testing\\Sweets.txt"), StandardCharsets.UTF_8));
@@ -34,8 +57,8 @@ public class Present {
                     }*/
 
                 //} else
-                    present.add(new Sweet(strM[0], Double.valueOf(strM[1]), Double.valueOf(strM[2])));
-        }
+                present.add(new Sweet(strM[0], Double.valueOf(strM[1]), Double.valueOf(strM[2])));
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +98,7 @@ public class Present {
         for (Sweet sweet : present) {
             totalWeight += sweet.getWeight();
             totalCost += sweet.priceGram();
-            System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice());
+            System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle().replaceAll(String.valueOf('\uFEFF'), ""), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice());
         }
         System.out.println("Общий вес:" + totalWeight);
         System.out.println("Общая цена:" + totalCost);
