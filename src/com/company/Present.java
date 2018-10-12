@@ -51,8 +51,27 @@ public class Present {
             e.printStackTrace();
         }
 
+        List<Sweet> comulat = new ArrayList<>();
+//
+//        present.stream().forEach(sweet -> {
+//            if (comulat.stream().noneMatch(c -> c.getTitle().equals(sweet.getTitle()))) {
+//                comulat.add(new Sweet(sweet.getTitle(), 0, 0));
+//            }
+//        });
+//
+//        present.stream().forEach(sweet -> {
+//            comulat.stream().filter(f -> f.getTitle().equals(sweet.getTitle()))
+//                    .forEach(s -> s.setWeight(s.getWeight() + sweet.getWeight()));
+//        });
+//
+//
+//        comulat.stream().forEach(sweet ->
+//                System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice()));
+
+
         System.out.println("Информация по позициям");
         present.stream()
+                .sorted((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()))
 //              .filter(sweet -> sweet.getTitle().contains("Шоколад"))
                 .forEach(sweet -> {
                     totalWeight.set(sweet.getWeight() + totalWeight.get());
@@ -62,6 +81,15 @@ public class Present {
 
         System.out.println("Общий вес:" + totalWeight);
         System.out.println("Общая цена:" + totalCost);
+
+
+
+            present.stream().collect(Collectors.groupingBy(s -> (s.getTitle()))).entrySet().stream().forEach(e -> {
+            double v= e.getValue().stream().mapToDouble(Sweet::getWeight).sum();
+            comulat.add(new Sweet(e.getKey(),v,0));
+        });
+        comulat.stream().forEach(sweet ->
+                System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice()));
 
     }
 
