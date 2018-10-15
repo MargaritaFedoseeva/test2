@@ -70,7 +70,12 @@ public class Present {
 
 
         System.out.println("Информация по позициям");
-        present.stream()
+        present.stream().collect(Collectors.groupingBy(s -> (s.getTitle()))).entrySet().stream().forEach(e -> {
+            double v = e.getValue().stream().mapToDouble(Sweet::getWeight).sum();
+            double p=e.getValue().stream().mapToDouble(Sweet::getPrice).findFirst().getAsDouble();
+            comulat.add(new Sweet(e.getKey(), p, v));
+        });
+        comulat.stream()
                 .sorted((o1, o2) -> o1.getTitle().compareTo(o2.getTitle()))
 //              .filter(sweet -> sweet.getTitle().contains("Шоколад"))
                 .forEach(sweet -> {
@@ -78,18 +83,8 @@ public class Present {
                     totalCost.set(sweet.priceGram() + totalCost.get());
                     System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice());
                 });
-
         System.out.println("Общий вес:" + totalWeight);
         System.out.println("Общая цена:" + totalCost);
-
-
-
-            present.stream().collect(Collectors.groupingBy(s -> (s.getTitle()))).entrySet().stream().forEach(e -> {
-            double v= e.getValue().stream().mapToDouble(Sweet::getWeight).sum();
-            comulat.add(new Sweet(e.getKey(),v,0));
-        });
-        comulat.stream().forEach(sweet ->
-                System.out.printf("%s: %.2f руб. - стоимость за %.2f г, %.2f руб. цена за кг \n", sweet.getTitle(), sweet.getPriseGram(), sweet.getWeight(), sweet.getPrice()));
 
     }
 
