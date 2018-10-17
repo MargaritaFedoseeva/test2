@@ -1,5 +1,7 @@
-package com.company;
+package com.company.sweets;
 
+
+import com.company.sweets.Sweet;
 
 public class Jellybean extends Sweet {
     private final int IDJELLYBEAN;

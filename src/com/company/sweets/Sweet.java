@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sweets;
 
 public class Sweet {
     private double price;

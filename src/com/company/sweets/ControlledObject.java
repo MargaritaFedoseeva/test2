@@ -1,4 +1,4 @@
-package com.company;
+package com.company.sweets;
 
 
 import java.lang.annotation.ElementType;

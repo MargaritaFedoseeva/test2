@@ -1,4 +1,5 @@
-package com.company;
+package com.company.sweets;
+
 @ControlledObject(name="Шоколад")
 public class Chocolates extends Sweet {
 //    @ControlledObject(name="Шоколад",def=1)

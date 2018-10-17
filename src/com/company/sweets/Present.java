@@ -1,10 +1,9 @@
-package com.company;
+package com.company.sweets;
 
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Present {
     public static void main(String[] args) {
